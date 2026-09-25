@@ -1,12 +1,12 @@
 # 💰 HarcamaTakip
 
-## 🌐 Canlı Demo
-
-[Paradefterim - Canlı Uygulama](https://paradefterim.netlify.app)
-
 Kişisel harcamaların kolay bir şekilde kaydedilmesini, görüntülenmesini, güncellenmesini ve silinmesini sağlayan web tabanlı bir harcama takip uygulamasıdır.
 
 Bu proje, modern web geliştirme teknolojileri kullanılarak hazırlanmıştır.
+
+## 🌐 Canlı Demo
+
+[Paradefterim - Canlı Uygulama](https://paradefterim.netlify.app)
 
 ## 🚀 Proje Özellikleri
 
