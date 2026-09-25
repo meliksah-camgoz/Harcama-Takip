@@ -64,17 +64,6 @@ ng serve
 Tarayıcıdan aşağıdaki adresi açın:
 http://localhost:4200/
 
-📱 Responsive Tasarım
-Uygulama masaüstü, tablet ve mobil ekranlar için responsive olarak tasarlanmıştır.
-Mobil cihazlarda harcama listesi daha kullanışlı bir kart görünümüne dönüşmektedir.
-📌 Proje Amacı
-Bu proje, Angular framework'ü kullanılarak temel CRUD işlemlerinin ve LocalStorage tabanlı veri yönetiminin uygulanması amacıyla geliştirilmiştir.
-Proje kapsamında:
-- Create
-- Read
-- Update
-- Delete
-işlemleri uygulanmıştır.
 👨‍💻 Geliştirici
 Melikşah Camgöz
 Computer Technology and Information Systems
