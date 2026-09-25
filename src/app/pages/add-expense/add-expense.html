@@ -1,0 +1,121 @@
+<div class="container mt-4">
+
+    <div class="row justify-content-center">
+  
+      <div class="col-md-8 col-lg-6">
+  
+        <div class="card shadow-sm">
+  
+          <div class="card-body">
+  
+            <h2 class="card-title mb-4">
+                {{ isEditMode ? 'Harcama Güncelle' : 'Yeni Harcama Ekle' }}
+            </h2>
+  
+            <form (ngSubmit)="addExpense()">
+  
+              <!-- Harcama Başlığı -->
+              <div class="mb-3">
+                <label class="form-label">
+                  Harcama Başlığı
+                </label>
+  
+                <input
+                  type="text"
+                  class="form-control"
+                  name="title"
+                  [(ngModel)]="title"
+                  placeholder="Örn: Market alışverişi"
+                  required
+                >
+              </div>
+  
+              <!-- Tutar -->
+              <div class="mb-3">
+                <label class="form-label">
+                  Tutar (₺)
+                </label>
+  
+                <input
+                  type="number"
+                  class="form-control"
+                  name="amount"
+                  [(ngModel)]="amount"
+                  placeholder="Örn: 500"
+                  min="0"
+                  required
+                >
+              </div>
+  
+              <!-- Kategori -->
+              <div class="mb-3">
+                <label class="form-label">
+                  Kategori
+                </label>
+  
+                <select
+                  class="form-select"
+                  name="category"
+                  [(ngModel)]="category"
+                  required
+                >
+                  <option value="">Kategori seçiniz</option>
+                  <option value="Gıda">Gıda</option>
+                  <option value="Ulaşım">Ulaşım</option>
+                  <option value="Fatura">Fatura</option>
+                  <option value="Alışveriş">Alışveriş</option>
+                  <option value="Eğlence">Eğlence</option>
+                  <option value="Sağlık">Sağlık</option>
+                  <option value="Diğer">Diğer</option>
+                </select>
+              </div>
+  
+              <!-- Tarih -->
+              <div class="mb-3">
+                <label class="form-label">
+                  Tarih
+                </label>
+  
+                <input
+                  type="date"
+                  class="form-control"
+                  name="date"
+                  [(ngModel)]="date"
+                  required
+                >
+              </div>
+  
+              <!-- Açıklama -->
+              <div class="mb-3">
+                <label class="form-label">
+                  Açıklama
+                </label>
+  
+                <textarea
+                  class="form-control"
+                  name="description"
+                  [(ngModel)]="description"
+                  rows="3"
+                  placeholder="Harcama hakkında kısa bir açıklama..."
+                ></textarea>
+              </div>
+  
+              <!-- Buton -->
+                <button
+                   type="submit"
+                   class="btn btn-primary w-100"
+                >
+                   {{ isEditMode ? 'Harcamayı Güncelle' : 'Harcamayı Kaydet' }}
+                </button>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
